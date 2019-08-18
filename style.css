@@ -8,7 +8,51 @@ body {
   
   * {
     box-sizing: border-box;
+    margin: 0;
   }
+  
+  /* sticky footer styling */
+  
+  /* https://css-tricks.com/snippets/css/sticky-footer/ */
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  .wrapper {
+    height: auto !important;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto -105px;
+  }
+  
+  footer,
+  .push {
+    height: 105px;
+  }
+  
+  /* end sticky footer styling */
+  
+  /* start hover styling */
+  
+  #logo:hover,
+  input[type=submit]:hover {
+    background: #5e7f7e;
+  }
+  
+  nav a:hover {
+    color: #5e7f7e;
+  }
+  
+  .social:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  /* end hover styling */
+  
+  /* general styling */
   
   /* general */
   
@@ -168,13 +212,12 @@ body {
     border-bottom: 0;
   }
   
-  .auth-image {
-    float: left;
-    width: 200px;
-    height: auto;
-    margin-top: 10px;
-    margin-right: 25px;
-  }
+  .responsive {
+  width: 35%;
+  height: auto;
+  float: left;
+  margin: 40px;
+}
   
   /* contact page */
   
@@ -216,11 +259,10 @@ body {
     border: 0 none;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 980px) {
     P{
         font-size: 1.5rem;
         line-height: 1.5;
-        header: static;
     }
   }
 
@@ -231,10 +273,36 @@ body {
     }
   }
 
-  @media (max-width: 980px) {
+  @media (max-width: 640px) {
     P{
         font-size: 1.5rem;
         line-height: 1.5;
     }
+    .responsive {
+      width: 100%;
+      height: auto;
+      float: left;
+      margin: 0px;
+    }
+    #logo {
+      float: left;
+      width: 100%;
+      height: 90px;
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 90px;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      background: #4aaaa5;
+    }
+    nav {
+      width: 100%;
+      float: center;
+      margin-top: 25px;
+    }
   }
+
+ 
   
